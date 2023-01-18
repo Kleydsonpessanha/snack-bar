@@ -96,10 +96,11 @@ main {
 
 
 .first-block {
-  background-image: url(https://img.freepik.com/fotos-gratis/parede-de-tijolo-preto-texturizado-fundo_53876-63572.jpg);
+  background-image: url(https://img.freepik.com/fotos-gratis/parede-https://img.freepik.com/fotos-gratis/hamburguer-de-vista-frontalhttps://img.freepik.com/fotos-gratis/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-salahttps://img.freepik.com/fotos-gratis/3d-interior-de-quarto-grunge-com-holofotes-e-fundo-de-atmosfera-esfumacada_1048-11333.jpg?size=626&ext=jpg&ga=GA1.2.1363973567.1674042530&semt=sph_1258-28312.jpg?size=626&ext=jpg&ga=GA1.2.1363973567.1674042530&semt=sph-com-batatas-fritas_23-2148235001.jpg?size=626&ext=jpg&ga=GA1.1.1363973567.1674042530de-tijolo-preto-texturizado-fundo_53876-63572.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  box-shadow: inset 2px 3px 1px var(--bg-header);
 }
 
 
