@@ -22,7 +22,7 @@
   --color-text-one: #fff;
   --color-text-two: #000000;
   --bg-header: #eeb20c;
-  --color-text-three: #a87b00; 
+  --color-text-three: #464646; 
 }
 
 
@@ -31,32 +31,20 @@ body,html {
   
 }
 
+
 header {
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--bg-header);
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+   width: 100%;
+   text-align: center;
+   padding: 1rem;
+   background-color: var(--bg-header);
+   position: fixed;
+   
 }
 
-.hr-header {
-  border: none;
-  height: 2px;
-  color: var(--color-text-one);
-}
 
-   .title-logo {
-    color: var(--color-text-one);
-    text-align: left;
-    text-shadow: 2px 2px 2px black;
-   }
-
-main {
-  margin-bottom: 10rem;
-}
 
 .nav-bar {
   display: flex;
@@ -74,7 +62,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 0.5rem;
+  margin: 0rem;
   
 }
 
@@ -83,7 +71,7 @@ main {
   align-items: center;
   flex-direction: column;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all .4s;
   padding: 5px;
 }
@@ -96,11 +84,12 @@ main {
 
 
 .first-block {
-  background-image: url(https://img.freepik.com/fotos-gratis/parede-https://img.freepik.com/fotos-gratis/hamburguer-de-vista-frontalhttps://img.freepik.com/fotos-gratis/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-salahttps://img.freepik.com/fotos-gratis/3d-interior-de-quarto-grunge-com-holofotes-e-fundo-de-atmosfera-esfumacada_1048-11333.jpg?size=626&ext=jpg&ga=GA1.2.1363973567.1674042530&semt=sph_1258-28312.jpg?size=626&ext=jpg&ga=GA1.2.1363973567.1674042530&semt=sph-com-batatas-fritas_23-2148235001.jpg?size=626&ext=jpg&ga=GA1.1.1363973567.1674042530de-tijolo-preto-texturizado-fundo_53876-63572.jpg);
+  
+  background-image: url(https://img.freepik.com/fotos-gratis/saboroso-hamburguer-de-carne-com-queijo-e-salada-de-frente-no-fundo-escuro_140725-89595.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  box-shadow: inset 2px 3px 1px var(--bg-header);
+  
 }
 
 
@@ -112,7 +101,7 @@ main {
    width: 80%;
    text-align: center;
    margin: auto;
-   padding-top: 2.5rem;
+   padding-top: 5rem;
 }
 
 .title-of-presentation {
@@ -163,10 +152,6 @@ main {
     transition: all 1s cubic-bezier(0,0,.5,1);    
 }
 
-.card-drinks:hover, .card-snacks:hover {
-     transform: scale(1.1);
-}
-
 .card-snacks {
   background-color: var(--bg-card-snacks);
 }
@@ -195,9 +180,9 @@ main {
 .second-block {
   text-align: center;
  
-   padding-top: 1rem;
+   padding-top: 4rem;
    padding-bottom: 3rem;
-  background: var(--bg2); 
+  background: var(--bg); 
   }
 
 
@@ -221,7 +206,6 @@ main {
 }
 
 .snacks-in-promotion {
-  position: relative;
   padding: 15px;
   max-width: 940px;
   margin: 0 auto;
@@ -335,16 +319,13 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 .image-location {
   text-align: center;
   margin: auto;
-   width: 80%;
+   width: 70%;
    max-width: 640px;
    border-radius: 1rem;
    box-shadow: 2px 2px 2px black;
    transition: 0.9s;
 }
 
-.image-location:hover {
-  transform: scale(1.1);
-}
 
 .paragraph-location {
   padding-top: 2rem;
@@ -355,4 +336,75 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 .icon-loc {
   width: 30px;
+}
+
+
+footer {
+  background-color: var(--bg-header);
+}
+
+.menu-footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: row;
+
+}
+
+.ul-footer {
+  line-height: 2rem;
+}
+
+.title-contact {
+  color: var(--color-text-one);
+  font-weight: bold;
+   padding: 3px;
+  background-color: var(--color-text-two);
+  border-radius: 5px;
+}
+
+.paragraph-contact {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  color: var(--color-text-two);
+  font-weight: 700;
+}
+
+.list > a { 
+   font-weight: bold;
+   color: var(--color-text-two);
+   padding: 5px;
+   border-radius: 5px;
+   
+}
+
+.list > a:hover {
+  color: var(--color-text-two);
+}
+
+.rigths {
+   text-align: center;
+   padding: 1rem;
+   padding-bottom: 6rem;
+   
+}
+
+.paragraph-of-rights {
+  color: var(--color-text-two);
+  padding-top: 4rem;
+   padding-bottom: 2rem;
+   font-weight: 800;
+}
+
+.span-of-rights-name {
+  color: var(--color-text-one);
+}
+
+.paragraph-credits {
+  color: var(--color-text-two);
+  font-weight: 800;
 }
