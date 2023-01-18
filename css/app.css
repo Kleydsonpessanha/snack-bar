@@ -13,6 +13,7 @@
 :root {
   --bg: #e5e5e5;
   --bg2: #d8d8d8;
+  --bg-home: #bd8c04;
   --bg-color-logo: #eeb20c;
   --bg-menu: #eeb20c;
   --bg-card-snacks: #ea1d2c;
@@ -30,13 +31,19 @@ body,html {
 }
 
 header {
- 
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
     width: 100%;
     text-align: center;
     padding: 1rem;
     background-color: var(--bg-color-logo);
     margin-bottom: 2rem;
 }
+
+   .title-logo {
+    text-align: left;
+   }
 
 main {
   margin-bottom: 10rem;
@@ -85,13 +92,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-   width: 50%;
+   width: 80%;
    text-align: center;
    margin: auto;
    margin-top: 5rem;
 }
 
 .short-introduction {
+  padding-top: 2rem;
   text-align: justify;
 }
 
@@ -107,7 +115,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 4%;
+    margin: 1rem;
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
@@ -171,10 +180,12 @@ hr {
   background-color: var(--color-text-two);
  margin-bottom: 2rem;
   width: 60%;
+  margin: auto;
 }
 
 .title-promotion {
-  text-align: left;
+  padding: 1rem;
+  text-align: center;
   color: var(--color-text-two);
 }
 
