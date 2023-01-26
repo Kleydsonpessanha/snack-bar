@@ -22,7 +22,7 @@
   --bg-card-snacks: #ea1d2c;
   --bg-card-drinks: #b6d048;
   --bg-card: #d8a824;
-  --bg-color-more-requests: #2c2c2c;
+  --bg-color-more-requests: #2a2826;
   --color-text-one: #fff;
   --color-text-two: #000000;
   --color-text-for: #ea1d2c;
@@ -209,9 +209,10 @@ header {
     }
 
     .descrition-of-more-requests {
-      
-      
-      text-align: justify;
+      padding-top: 3px;
+      letter-spacing: 1px;
+      color: #696868;
+    text-align: left;
     }
 
     .image-of-slide-more-requests {
