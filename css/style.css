@@ -112,8 +112,9 @@ header {
   
   justify-content: space-evenly;
   background-color: var(--bg);
-  padding: 0.5rem;
+  padding: 1rem;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .image-of-gif {
@@ -149,10 +150,11 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-   background-color: var(--bg);
-   padding-top: 4rem;
-   
-  
+   background-color: var(--bg2);
+
+   padding: 1rem;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
   }
 
   .section-list-of-more-requested { 
@@ -223,7 +225,8 @@ header {
 
 
 .location {
-   padding-top: 2rem;
+  padding: 1rem;
+   padding-top: 5rem;
    text-align: center;
    padding-bottom: 4rem;
    background-color: var(--bg);
