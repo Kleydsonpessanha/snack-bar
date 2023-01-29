@@ -13,6 +13,7 @@
       text-align: center;
 }
 
+
 :root {
   --bg: #e5e5e5;
   --bg2: #d8d8d8;
@@ -30,7 +31,6 @@
   --color-text-three: #464646; 
 }
 
-
 body {
     background: var(--bg);
   
@@ -38,6 +38,7 @@ body {
 
 
 header {
+  padding: 0.5rem;
    background-color: var(--bg-header);
 }
 

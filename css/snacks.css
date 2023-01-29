@@ -1,0 +1,122 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+
+
+:root {
+    --bg: #e5e5e5;
+    --bg2: #d8d8d8;
+    --bg-footer: #eeb20c; 
+    --bg-color-logo: #eeb20c;
+    --bg-menu: #eeb20c;
+    --bg-card-snacks: #ea1d2c;
+    --bg-card-drinks: #b6d048;
+    --bg-card: #d8a824;
+    --bg-color-more-requests: #2a2826;
+    --color-text-one: #fff;
+    --color-text-two: #000000;
+    --color-text-for: #ea1d2c;
+    --bg-header: #eeb20c;
+    --color-text-three: #464646; 
+  }
+
+body{
+    background: var(--bg);
+}
+
+header {
+    padding: 0.5rem;
+     background-color: var(--bg-header);
+  }
+
+.hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .image-logo {
+    mix-blend-mode: multiply;
+  }
+  
+  .nav-logo { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+     text-align: center;
+     padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-text-three);
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-menu);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .nav-list {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    
+  }
+  
+  .list > a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--color-text-two);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all .4s;
+    padding: 5px;
+  }
+  
+  .list > a:hover {
+    border-radius: 5px;
+    
+    background-color: var(--bg);
+  }
+  
+
+
+.carousel-of-itens {
+
+    padding-bottom: 1rem;
+    
+}
+
+
+.image-carousel {
+    height: 300px;
+}
