@@ -65,6 +65,11 @@ p {
     gap: 2%;
 }
 
+.title-of-information {
+    
+}
+
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -110,6 +115,11 @@ p {
 .section-of-schedules { 
     
     text-align: center;
+}
+
+.image-logo-from-snack-bar {
+    width: 100%;
+    max-width: 200px;
 }
 
 .schedules {
@@ -164,15 +174,26 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 5rem;
+}
+
+.title-frequent-questions {
+    text-align: center;
+    padding-bottom: 3rem;
 }
 
 .question {
-    margin: auto;
+   text-align: center;
     border-bottom: 1px solid #ccc;
-    padding: 10px 0
+    padding: 10px 0;
+    margin: auto;
+    width: 67%;
   }
   
+.answer {
+    color: var(--color-text-two);
+}
+
   .question input,
   .question .answer { display: none }
   
@@ -182,6 +203,7 @@ p {
     margin: auto;
     margin-bottom: 5px;
     width: 100%;
+    color: var(--color-text-for);
   }
   
   .question input:checked ~ .answer {

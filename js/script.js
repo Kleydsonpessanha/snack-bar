@@ -8,14 +8,11 @@ function OpenOrClosed() {
   const days = date.getDay()
   const hours = date.getHours()
 
-  if (hours >= 19 && hours <= 23 && days >= 1 && days <= 4) {
+  if (hours >= 19 && hours <= 23 && days >= 1 && days <= 6) {
      msg.innerHTML = 'Aberto'
      msg.style.color = '#035500'
-  } else if(days >= 5 && days <= 6 && hours >= 19 && hours <= 00) {
-    msg.innerHTML = 'Aberto'
-    msg.style.color = '#035500'
   } else {
-      msg.innerHTML = 'Fechado'
+      msg.innerHTML = 'Fechada'
       msg.style.color = '#c42b17'
   }
   
