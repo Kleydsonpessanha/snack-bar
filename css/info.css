@@ -121,7 +121,8 @@ p {
 }
 
 .title-open-or-closed {
-    color: var(--color-open);
+    
+    font-weight: bold;
 }
 
 .paragraph-schedules-from-snack-bar {
@@ -159,3 +160,30 @@ p {
     width: 30px;
 }
 
+.frequent-questions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.question {
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0
+  }
+  
+  .question input,
+  .question .answer { display: none }
+  
+  .question label {
+    display: inline-block;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  .question input:checked ~ .answer {
+    display: block
+  }
