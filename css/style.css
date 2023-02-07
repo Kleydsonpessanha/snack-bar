@@ -243,6 +243,12 @@ header {
   padding-bottom: 2rem;
 }
 
+.iframe {
+  border-radius: 1rem;
+  width: 100%;
+  
+}
+
 .location-of-snack-bar {
   padding-top: 4rem;
 }
