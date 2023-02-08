@@ -6,18 +6,17 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: black;
     font-family: system-ui, -apple-system,
      BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
-      text-align: center;
+      
 }
 
 
 :root {
   --bg: #e5e5e5;
   --bg2: #d8d8d8;
-  --bg-footer: #eeb20c; 
+  --bg-footer: #e5e5e5; 
   --bg-color-logo: #eeb20c;
   --bg-menu: #eeb20c;
   --bg-card-snacks: #ea1d2c;
@@ -33,13 +32,11 @@
 
 body {
     background: var(--bg);
-  
 }
 
-
 header {
-  padding: 0.5rem;
-   background-color: var(--bg-header);
+  
+  background-color: var(--bg-header);
 }
 
 .image-logo {
@@ -49,19 +46,23 @@ header {
 .nav-logo { 
   display: flex;
   align-items: center;
-  justify-content: center;
+  
    width: 100%;
    text-align: center;
    padding: 1rem;
 }
 
+.title-logo {
+  text-align: left;
+}
+
 .logo {
   display: flex;
   align-items: center;
+  
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: bold;
-  color: var(--color-text-three);
+  color: black;
   font-size: 1.5rem;
 }
 
@@ -76,6 +77,7 @@ header {
   width: 100%;
   position: fixed;
   bottom: 0;
+  padding: 3px;
 }
 
 .nav-list {
@@ -97,6 +99,7 @@ header {
   font-size: 1rem;
   transition: all .4s;
   padding: 5px;
+  color: var(--color-text-for);
 }
 
 .list > a:hover {
@@ -230,7 +233,7 @@ header {
   padding: 1rem;
    padding-top: 5rem;
    text-align: center;
-   padding-bottom: 4rem;
+   padding-bottom:  2rem;
    background-color: var(--bg);
 }
 
@@ -277,12 +280,13 @@ header {
 
 hr {
   border: none;
-  
+  height: 2px;
+  background-color: #2a2826;
 }
 
 
 footer {
-  background-color: var(--bg-card);
+  background-color: var(--bg-footer);
 }
 
 .menu-footer {
@@ -302,11 +306,12 @@ footer {
 }
 
 .title-contact {
-  color: var(--bg-header);
+  color: var(--color-text-one);
   font-weight: bold;
    padding: 3px;
   background-color: var(--color-text-two);
   border-radius: 5px;
+  padding: 5px;
 }
 
 .paragraph-contact {
@@ -344,7 +349,7 @@ footer {
 }
 
 .span-of-rights-name {
-  color: var(--color-text-one);
+  color: var(--color-text-three);
 }
 
 .paragraph-credits {
