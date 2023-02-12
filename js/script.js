@@ -1,7 +1,4 @@
 
-
-
-
 function OpenOrClosed() {
   const msg = document.getElementById("openOrClosed")
   const date = new Date()
@@ -19,3 +16,15 @@ function OpenOrClosed() {
 }
 
 OpenOrClosed()
+
+function buy() {
+  const btnBuys = document.querySelectorAll("#btn-buy");
+
+  btnBuys.forEach(function(btnBuy) {
+    btnBuy.addEventListener("click", function() {
+      const itemName = this.getAttribute("data-item-name");
+      window.open(`https://api.whatsapp.com/send?phone=5522998423129&text=Quero%20comprar%20o%20${itemName}`);
+    });
+  });
+}
+buy();

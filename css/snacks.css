@@ -205,6 +205,16 @@ padding: 2rem 0 5rem 0;
   text-align: left;
 }
 
+.btn-buy {
+  margin: 1rem 0;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-text-one);
+  background-color: var(--color-text-five);
+  cursor: pointer;
+}
+
 .value {
   display: flex;
   flex-wrap: wrap;
