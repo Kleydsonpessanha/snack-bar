@@ -9,7 +9,7 @@
     font-family: system-ui, -apple-system,
      BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
-      
+    color: #000000;
 }
 
 
@@ -144,7 +144,7 @@ header {
   
   margin: auto;
   font-weight: 800;
-  font-size: 15pt;
+  font-size: 13pt;
 }
 
 
@@ -303,6 +303,15 @@ footer {
 .ul-footer {
   line-height: 2rem;
   text-align: center;
+}
+
+
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .title-contact {

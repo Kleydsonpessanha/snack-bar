@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
     <title>Bebidas</title>
     <link rel="stylesheet" href="css/drinks.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -82,10 +83,11 @@
                     <h2 class="name-of-drinks">GUARAVITA</h2>
                            <article class="value">
                              <span class="value-of-drinks-at-promotion values-current">
-                               R$6,99
+                               R$2,00
                              </span>
                              
                            </article>
+                           <button class="btn-buy" id="btn-buy" onclick="buyDrinks()" data-item-name="Guaravita">Comprar</button>
                       </article>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
                     alt="" class="image-of-cards-of-drinks">
@@ -94,67 +96,71 @@
                  <div class="dishes-itens cards">
  
                    <article class="text-about-the-drinks">
-                    <h2 class="name-of-drinks">GUARAVITA</h2>
+                    <h2 class="name-of-drinks">COCA COLA</h2>
                            <article class="value">
                              <span class="value-of-drinks-at-promotion values-current" >
-                               R$5,99
+                               R$7,50
                              </span>
                              
                            </article>
+                           <button class="btn-buy" id="btn-buy" onclick="buyDrinks()" data-item-name="Coca Cola">Comprar</button>
                       </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_Tg0RyiZSgqeuNOjbg28njjEQt9A_3Roeg&usqp=CAU"
                     alt="" class="image-of-cards-of-drinks">
                  </div>
  
                  <div class="dishes-itens cards">
  
                    <article class="text-about-the-drinks">
-                    <h2 class="name-of-drinks">GUARAVITA</h2>
+                    <h2 class="name-of-drinks">CLIPER COLA</h2>
                            <article class="value">
                              <span class="value-of-drinks-at-promotion values-current" >
-                               R$6,99
+                               R$5,00
                              </span>
                              
                            </article>
+                           <button class="btn-buy" id="btn-buy" onclick="buyDrinks()" data-item-name="Cliper Cola">Comprar</button>
                       </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
+                    <img src="data:image/jpeg;base64,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"
                     alt="" class="image-of-cards-of-drinks">
                  </div>
  
                  <div class="dishes-itens cards">
  
                    <article class="text-about-the-drinks">
-                    <h2 class="name-of-drinks">GUARAVITA</h2>
+                    <h2 class="name-of-drinks">CLIPER UVA</h2>
                            <article class="value">
                              <span class="value-of-drinks-at-promotion values-current" >
-                               R$6,99
+                               R$5,00
                              </span>
                              
                            </article>
+                           <button class="btn-buy" id="btn-buy" onclick="buyDrinks()" data-item-name="Cliper Uva">Comprar</button>
                       </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
+                    <img src="https://pedidook.s3-sa-east-1.amazonaws.com/107873/produto/foto_14096581.jpg?nocache=20210316135442330767"
                     alt="" class="image-of-cards-of-drinks">
                  </div>
  
                  <div class="dishes-itens cards">
  
                    <article class="text-about-the-drinks">
-                    <h2 class="name-of-drinks">GUARAVITA</h2>
+                    <h2 class="name-of-drinks">CLIPER GUARANAR</h2>
                            <article class="value">
                              <span class="value-of-drinks-at-promotion values-current">
-                               R$7,99
+                               R$5,00
                              </span>
                              
                            </article>
+                           <button class="btn-buy" id="btn-buy" onclick="buyDrinks()" data-item-name="Cliper Guaranar">Comprar</button>
                       </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIza8VP6gkcGef-piwuzJL832DlhoBbSJHud4AvaU-9Q&s"
                     alt="" class="image-of-cards-of-drinks">
                  </div>
  
                  <div class="dishes-itens cards">
  
                    <article class="text-about-the-drinks">
-                     <h2 class="name-of-drinks">GUARAVITA</h2>
+                     <h2 class="name-of-drinks">CLIPER LARANJA</h2>
                      
                            <article class="value">
                              <span class="value-of-drinks-at-promotion values-current">
@@ -162,15 +168,16 @@
                              </span>
                              
                            </article>
+                           <button class="btn-buy" id="btn-buy" onclick="buyDrinks()" data-item-name="Cliper Laranja">Comprar</button>
                       </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
+                    <img src="data:image/jpeg;base64,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"
                     alt="" class="image-of-cards-of-drinks">
                  </div>
  
                  <div class="dishes-itens cards">
  
                    <article class="text-about-the-drinks">
-                     <h2 class="name-of-drinks">GUARAVITA</h2>
+                     <h2 class="name-of-drinks">ATIVO</h2>
                     
                            <article class="value">
                              <span class="value-of-drinks-at-promotion values-current">
@@ -178,40 +185,12 @@
                              </span>
                              
                            </article>
+                           <button class="btn-buy" id="btn-buy" onclick="buyDrinks()" data-item-name="HAMBURGUER">Comprar</button>
                       </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7LoOBRzEhnUZVXjPjJj-_es-RJzJEI_HhZZHHpC7fcr1B0lvZq7_o5_U4RN-9tAMp-Q&usqp=CAU"
                     alt="" class="image-of-cards-of-drinks">
                  </div>
  
-                 <div class="dishes-itens cards">
- 
-                   <article class="text-about-the-drinks">
-                     <h2 class="name-of-drinks">GUARAVITA</h2>
-                     
-                           <article class="value">
-                             <span class="value-of-drinks-at-promotion values-current" >
-                               R$9,99</span>
-                             
-                           </article>
-                      </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
-                    alt="" class="image-of-cards-of-drinks">
-                 </div>
- 
-                 <div class="dishes-itens cards">
- 
-                   <article class="text-about-the-drinks">
-                     <h2 class="name-of-drinks">GUARAVITA</h2>
-                    
-                           <article class="value">
-                             <span class="value-of-drinks-at-promotion values-current" >
-                               R$8,99</span>
-                             
-                           </article>
-                      </article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkS9pXKymIbaMJupRpgM9LJbOq-C6HV2F9Q&usqp=CAU"
-                    alt="" class="image-of-cards-of-drinks">
-                 </div>
                </section>
          </section>
         
@@ -232,7 +211,32 @@
                  </nav>
              </div>
          </section>
-        
       </main>
+      <footer>
+        <div class="menu-footer">
+ 
+           <article class="contact">
+            <p class="contact-phone paragraph-contact">Telefone
+               <span class="title-contact">(99) 9999-9999</span> 
+                
+           </p>
+           <p class="contact-instagram paragraph-contact">Instagram
+               <span class="title-contact">@Userofc</span> 
+                
+           </p>
+           <p class="contact-email paragraph-contact">Email
+               <span class="title-contact">User@gmail.com</span> 
+                
+           </p>
+                       
+           </article>
+        </div>  
+             
+         <article class="rigths">
+           <p class="paragraph-of-rights">&copy; Copyright 2023 | Desenvolvido por <span class="span-of-rights-name">Kleydson Pessanha</span></p>
+           <p class="paragraph-credits">&copy; Imagens retiradas - Icons8, Freepik, Flaticon, Ifood, Google</p>
+         </article>
+       </footer>
+       <script src="js/script.js"></script>
 </body>
 </html>

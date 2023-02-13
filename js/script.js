@@ -28,3 +28,16 @@ function buy() {
   });
 }
 buy();
+
+
+function buyDrinks() {
+  const btnBuys = document.querySelectorAll("#btn-buy");
+
+  btnBuys.forEach(function(btnBuyDrinks) {
+    btnBuyDrinks.addEventListener("click", function() {
+      const itemNameDrinks = this.getAttribute("data-item-name")
+      window.open(`https://api.whatsapp.com/send?phone=5522998423129&text=Eu%20gostaria%20de%20comprar%20um%20${itemNameDrinks}`)
+  })
+})
+}
+buyDrinks()
