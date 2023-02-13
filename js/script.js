@@ -23,7 +23,7 @@ function buy() {
   btnBuys.forEach(function(btnBuy) {
     btnBuy.addEventListener("click", function() {
       const itemName = this.getAttribute("data-item-name");
-      window.open(`https://api.whatsapp.com/send?phone=5522998423129&text=Quero%20comprar%20o%20${itemName}`);
+      window.open(`https://api.whatsapp.com/send?phone=5522998423129&text=Eu%20gostaria%20de%20comprar%20um%20${itemName}`);
     });
   });
 }
