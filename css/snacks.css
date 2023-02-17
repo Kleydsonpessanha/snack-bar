@@ -14,17 +14,17 @@
 :root {
     --bg: #e5e5e5;
     --bg2: #d8d8d8;
-    --bg-footer: #eeb20c; 
+    --bg-footer: #a8a8a8; 
     --bg-color-logo: #eeb20c;
-    --bg-menu: #eeb20c;
+    --bg-menu: #c7c7c7;
     --bg-card-snacks: #ea1d2c;
     --bg-card-drinks: #b6d048;
-    --bg-card: #d8a824;
+    --bg-card: #c7c7c7;
     --bg-color-more-requests: #2a2826;
     --color-text-one: #fff;
     --color-text-two: #000000;
     --color-text-for: #ea1d2c;
-    --bg-header: #eeb20c;
+    --bg-header: #c7c7c7;
     --color-text-three: #464646;
     --color-text-five: #276900;
   }
@@ -239,7 +239,7 @@ padding: 2rem 0 5rem 0;
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: var(--bg-menu);
+  background-color: var(--bg-card);
   border-radius: 0.5rem;
   padding: 1rem;
   width: 100%;
