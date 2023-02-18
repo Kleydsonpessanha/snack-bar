@@ -1,6 +1,6 @@
 
 function OpenOrClosed() {
-  const msg = document.getElementById("openOrClosed")
+  const msg = document.getElementById("btn-open-or-closed")
   const date = new Date()
   const days = date.getDay()
   const hours = date.getHours()
@@ -11,13 +11,13 @@ function OpenOrClosed() {
   } else {
       msg.innerHTML = 'Fechada'
       msg.style.color = '#c42b17'
-  }
-  
+  } 
 }
 
 OpenOrClosed()
 
-function buy() {
+
+function BtnBuySnacks() {
   const btnBuys = document.querySelectorAll("#btn-buy");
 
   btnBuys.forEach(function(btnBuy) {
@@ -30,13 +30,13 @@ function buy() {
 buy();
 
 
-function buyDrinks() {
+function BtnBuyDrinks() {
   const btnBuys = document.querySelectorAll("#btn-buy");
 
   btnBuys.forEach(function(btnBuyDrinks) {
     btnBuyDrinks.addEventListener("click", function() {
       const itemNameDrinks = this.getAttribute("data-item-name")
-      window.open(`https://api.whatsapp.com/send?phone=5522997812750&text=Eu%20gostaria%20de%20comprar%20um%20${itemNameDrinks}`)
+      window.open(`https://api.whatsapp.com/send?phone=5522998423129&text=Eu%20gostaria%20de%20comprar%20um%20${itemNameDrinks}`)
   })
 })
 }
