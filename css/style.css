@@ -1,368 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family= Dancing+Script:wght@500 & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kanit:ital,wght@1,300&family=Poppins:wght@300&family=Satisfy&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: system-ui, -apple-system,
-     BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #000000;
 }
-
 
 :root {
-  --bg: #e5e5e5;
-  --bg2: #d8d8d8;
-  --bg-footer: #e5e5e5; 
-  --bg-color-logo: #eeb20c;
-  --bg-menu: #c7c7c7;
-  --bg-card-snacks: #ea1d2c;
-  --bg-card-drinks: #b6d048;
-  --bg-card: #d8a824;
-  --bg-color-more-requests: #2a2826;
-  --color-text-one: #fff;
-  --color-text-two: #000000;
-  --color-text-for: #ea1d2c;
-  --bg-header: #c7c7c7;
-  --color-text-three: #464646; 
+    --background-color: #000000;
+    --primary-color: #eeb20c;
+    --secondary-color: #FF8D08;
+    --color-text-two: #000000;
+    --font-color: #FFFFFF;
+    --font-color-70: #FFFFFFB3;
+    --font-color-30: #FFFFFF4D;
 }
+
 
 body {
-    background: var(--bg);
-}
-
-header {
-  
-  background-color: var(--bg-header);
-}
-
-.image-logo {
-  mix-blend-mode: multiply;
-}
-
-.nav-logo { 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-   width: 100%;
-   text-align: center;
-   padding: 1rem;
-}
-
-.title-logo {
-  text-align: left;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  font-size: 1.5rem;
+    background: var(--background-color);
 }
 
 
-
-
-.nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-menu);
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  padding: 3px;
+p,a {
+    font-family: "Poppins",sans-serif;
 }
 
-.nav-list {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 0 auto;
-  
+.image-of-background {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Eq72oOLl1tCaPKhECiumW2Hfr8Ify7_1zQ&usqp=CAU');
+    height: 22vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-.list > a {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-weight: 700;
-  font-size: 1rem;
-  transition: all .4s;
-  padding: 5px;
-  color: var(--color-text-for);
-}
-
-.list > a:hover {
-  border-radius: 5px;
-  
-  background-color: var(--bg);
-}
-
-
-.first-block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  
-  justify-content: space-evenly;
-  background-color: var(--bg);
-  padding: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.image-of-gif {
-  mix-blend-mode: multiply;
-}
-
-.text-first-block {
-  width: 70%;
-}
-
-.title-of-presentation {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  color: var(--color-text-three);
- 
-}
-
-.short-introduction {
-  line-height: 30px;
-  color: var(--color-text-three);
-  padding-top: 1rem;
-  text-align: justify;
-  
-  margin: auto;
-  font-weight: 800;
-  font-size: 13pt;
-}
-
-
-.section-the-most-requested {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-   background-color: var(--bg2);
-
-   padding: 1rem;
-   padding-top: 3rem;
-   padding-bottom: 3rem;
-  }
-
-  .section-list-of-more-requested { 
-    text-align: center;
+.btn-open-or-closed {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-  }
-
-.list-of-most-requested {
- text-align: center;
-  background-color: var(--bg-color-more-requests);
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 1rem;
+    gap: 0.4rem;
+    background-color: #ffffffa6;
+    width: 30%;
+    border: none;
+    padding: 0.2rem;
 }
 
-.title-of-more-requested {
-  color: var(--color-text-one)
-}  
+.paragraph-open-or-closed {
+    font-weight: bold;
+}
 
-  .the-most-requested {
-    margin: auto;
-    width: 60%;
-    padding: 1rem;
-    padding-top: 3rem;
-  }
 
-  .itens-of-most-requested {
+.container {
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center!important;
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.infos-extra {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.image-of-snacksBar {
+    width: 200px;
+}
+
+.name-of-snackBar {
+    color: var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+.paragraph-of-info {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    text-align: center;
-   margin: auto;
-   width: 90%;
-  }
-
-.text-most-requested {
-  text-align: left;
+    justify-content: center;
+    color: var(--font-color);
 }
 
- .paragraph-of-value {
-      font-weight: bold;
-     color: var(--bg-color-logo);
- }  
+ .ri-check-line{
+    color: #00ff00;
+}
 
-    .title-of-more-requested {
-      text-align: left;
-      padding-top: 1rem;
-    }
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0.5rem 2rem 0.5rem;
+}
 
-    .descrition-of-more-requests {
-      padding-top: 3px;
-      letter-spacing: 1px;
-      color: #696868;
-    text-align: left;
-    }
+.btn {
+    background-color: var(--primary-color);
+    color: var(--color-text-two);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
-    .image-of-slide-more-requests {
-      width: 100%;
-      height: 47vh;
-      mix-blend-mode: multiply;
-    }
+.link-of-btn {
+    color: var(--color-text-two);
+    text-decoration: none;
+}
 
-
-
+.rights {
+    color: var(--font-color);
+}
 
 
 .location {
-  padding: 1rem;
-   padding-top: 5rem;
-   text-align: center;
-   padding-bottom:  2rem;
-   background-color: var(--bg);
+     margin:1rem 0rem;
+    color: var(--font-color);
 }
 
-.title-location {
-  color: var(--color-text-three);
-}
-
-
-.photo-image-location {
-  padding-bottom: 2rem;
-}
-
-.iframe {
-  border-radius: 1rem;
-  width: 100%;
-  max-width: 600px;
-   box-shadow: 2px 2px 2px 2px black;  
-}
-
-.location-of-snack-bar {
-  padding-top: 2.5rem;
-}
-
-.image-location {
-  text-align: center;
-  margin: auto;
-   width: 70%;
-   max-width: 640px;
-   border-radius: 0.5rem;
-   box-shadow: 2px 2px 2px black;
-   transition: 0.9s;
-}
-
-
-.paragraph-location {
-  padding-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-loc {
-  width: 30px;
-}
-
-hr {
-  border: none;
-  height: 2px;
-  background-color: #2a2826;
-}
-
-
-footer {
-  background-color: var(--bg-footer);
-}
-
-.menu-footer {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 1rem;
-  flex-direction: row;
-
-}
-
-.ul-footer {
-  line-height: 2rem;
-  text-align: center;
-}
-
-
-
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.title-contact {
-  color: var(--color-text-one);
-  font-weight: bold;
-   padding: 3px;
-  background-color: var(--color-text-two);
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.paragraph-contact {
-  display: flex;
-  flex-direction: column;
-  line-height: 2rem;
-  color: var(--color-text-two);
-  font-weight: 700;
-}
-
-.list > a { 
-   font-weight: bold;
-   color: var(--color-text-two);
-   padding: 5px;
-   border-radius: 5px;
-   
-}
-
-.list > a:hover {
-  color: var(--color-text-two);
-}
-
-.rigths {
-   text-align: center;
-   padding: 1rem;
-   padding-bottom: 6rem;
-   
-}
-
-.paragraph-of-rights {
-  color: var(--color-text-two);
-  padding-top: 4rem;
-   padding-bottom: 2rem;
-   font-weight: 800;
-}
-
-.span-of-rights-name {
-  color: var(--color-text-three);
-}
-
-.paragraph-credits {
-  color: var(--color-text-two);
-  font-weight: 800;
+.icon-of-location {
+  color: #00ff00;
 }

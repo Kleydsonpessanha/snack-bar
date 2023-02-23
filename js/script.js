@@ -1,3 +1,23 @@
+function falaoi() {
+  console.log("oi")
+}
+
+
+function searchSnack() {
+  const inputSearch = document.getElementById("input-search").value
+  const Itens = document.getElementsByClassName("cards")
+   
+
+  for (let i = 0; i < Itens.length; i++) {
+    if(!Itens[i].innerHTML.toLowerCase().includes(inputSearch)) {
+        Itens[i].style.display = 'none'
+    } else {
+      Itens[i].style.display = "flex"
+    }
+    
+  }
+}
+
 
 function OpenOrClosed() {
   const msg = document.getElementById("btn-open-or-closed")
