@@ -57,7 +57,7 @@
 }
 
 body{
-  background: var(--bg);
+  background: var(--black-800);
 }
 
 header {
@@ -67,7 +67,7 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
  padding: 1rem .5rem;
- background-color: var(--bg);
+ 
 }
 
 
@@ -83,7 +83,7 @@ header {
   max-width: 600px;
   padding: 1rem;
   padding-left: 30px;
-  border: 1px solid var(--red-two);
+  border: 1px solid var(--black-100);
   background-color: var(--bg-search);
 
   height: 30px;
@@ -98,7 +98,7 @@ header {
 
 ::placeholder {
   font-size: 1rem;
-  color: var(--red-two);
+  color: var(--black-200);
 }
 
 .search i {
@@ -106,7 +106,7 @@ header {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--red-two);
+  color: var(--black-100);
 }
 
 .nav-menu-of-snack  {
@@ -119,7 +119,7 @@ header {
   padding: 1rem;
 
   background-color: var(
-   --bg
+   --bg-card-snacks
   );
 }
 
@@ -134,7 +134,7 @@ header {
 .link-of-nav-menu-snack:hover{
   font-weight: bold;
   border-radius: 0;
-   border-bottom: 2px solid rgb(0, 0, 0);
+   border-bottom: 2px solid #ffffff;
    padding-bottom: 5px;
 }
 
@@ -142,12 +142,13 @@ header {
   padding: 0.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  color: var(--red-two);
+  color: var(--black-100);
+  transition: all 0.2s;
 }
 
 
 .title-logo {
-  color: var(--red-two);
+  color: var(--black-100);
 }
 
 .hr-global {
@@ -270,17 +271,21 @@ max-width: 300px;
 }
 
 .titles {
- 
+    padding-top: 2rem;
     padding-left: 1rem;
-    background: var(--bg);
-    color: var(--red-two);
-    border-bottom: 1px solid var(--red-two);
+    color: var(--black-100);
+    width: 30%;
+    border-bottom: 1px solid var(--black-100);
     /* z-index: 100;
     position: sticky;
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
     top: 77px; */
+}
+
+#snacks {
+  margin-top: 2rem;
 }
 
 #drinks {
@@ -299,8 +304,8 @@ margin: 0.5rem;
 .cards {
 display: flex;
 align-items: center;
-border: 3px solid var(--red-two);
-background-color: var(--bg-card);
+
+background-color: var(--black-85a);
 border-radius: 0.5rem;
 padding: 0.5rem;
 width: 100%;
@@ -321,19 +326,26 @@ max-width: 350px;
     object-fit: cover!important;
 }
 
+.names {
+  color: var(--black-100);
+}
+
 .name-of-snacks, .name-of-drinks {
   padding-top: 1rem;
+  
 }
 
 .text-about-the-snacks {
  margin: auto;
 text-align: left;
 width: 60%;
+
 }
 
 .info-of-snacks {
 padding-top: 0.5rem;
 text-align: left;
+color: var(--black-100);
 }
 
 .btn-buy {
@@ -341,9 +353,9 @@ margin: 1rem 0;
 border: none;
 padding: 0.5rem;
 border-radius: 0.5rem;
-color: var(--box-sucess-txt);
+color: var(--bg-card-snacks);
 font-weight: bold;
-border: 2px solid var(--box-sucess-txt);
+border: 2px solid var(--bg-card-snacks);
 background-color: transparent;
 cursor: pointer;
 }
@@ -354,11 +366,12 @@ align-items: center;
 flex-wrap: wrap;
 gap: 1rem;
 padding-top: 1rem;
+color: #000000;
 }
 
 .values-current {
 font-weight: 900;
-color: var(--box-sucess-txt);
+color: var(--black-100);
 }
 
 .value-former-of-snacks {
@@ -520,13 +533,6 @@ padding: 2rem 0 5rem 0;
   text-align: left;
 }
 
-
-
-.values-current {
-  font-weight: 900;
-  color: var(--box-sucess-txt);
-}
-
 .value-former-of-drinks {
   text-decoration: line-through;
 }
@@ -542,7 +548,7 @@ padding: 2rem 0 5rem 0;
 
 
 footer {
-  background-color: var(--bg-footer);
+  background-color: var(--black-700);
 }
 
 .menu-footer {
