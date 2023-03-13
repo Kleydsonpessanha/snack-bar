@@ -6,9 +6,9 @@
 }
 
 :root {
-    --background-color: #000000;
-    --primary-color: #eeb20c;
-    --secondary-color: #FF8D08;
+    --background-color:  linear-gradient(90deg, rgba(72,5,212,1) 0%, rgba(72,5,212,1) 35%, rgba(105,41,240,1) 100%);;
+    --primary-color: #ffffff;
+    --secondary-color: #6323ef;
     --color-text-two: #000000;
     --font-color: #FFFFFF;
     --font-color-70: #FFFFFFB3;
@@ -26,7 +26,7 @@ p,a {
 }
 
 .image-of-background {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Eq72oOLl1tCaPKhECiumW2Hfr8Ify7_1zQ&usqp=CAU');
+  
     height: 22vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -50,7 +50,7 @@ p,a {
 
 .container {
     position: fixed;
-    top: 43%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center!important;
@@ -66,7 +66,9 @@ p,a {
 }
 
 .image-of-snacksBar {
+    object-fit: cover;
     width: 200px;
+
 }
 
 .name-of-snackBar {
@@ -129,3 +131,5 @@ p,a {
 .icon-of-location {
   color: #00ff00;
 }
+
+
